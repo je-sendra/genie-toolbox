@@ -16,19 +16,12 @@ public abstract class Wish
     /// <param name="commonName"></param>
     /// <param name="description"></param>
     /// <param name="uniqueName"></param>
-    protected Wish(Guid id, string commonName, string description, string uniqueName)
+    protected Wish(string commonName, string description, string uniqueName)
     {
-        Id = id;
         CommonName = commonName;
         Description = description;
         UniqueName = uniqueName;
     }
-
-    /// <summary>
-    /// The unique identifier for the wish.
-    /// </summary>
-    /// <value></value>
-    public Guid Id { get; set; }
 
     /// <summary>
     /// The common name for the wish.

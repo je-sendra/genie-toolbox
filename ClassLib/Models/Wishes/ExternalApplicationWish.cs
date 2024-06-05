@@ -19,7 +19,7 @@ public class ExternalApplicationWish : Wish
     /// <param name="description"></param>
     /// <param name="uniqueName"></param>
     /// <param name="supportedPlatforms"></param>
-    public ExternalApplicationWish(Guid id, string commonName, string description, string uniqueName, List<SupportedPlatform> supportedPlatforms) : base(id, commonName, description, uniqueName)
+    public ExternalApplicationWish(string commonName, string description, string uniqueName, List<SupportedPlatform> supportedPlatforms) : base(commonName, description, uniqueName)
     {
         SupportedPlatforms = supportedPlatforms;
     }
